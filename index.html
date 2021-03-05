@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="icon" href="img/favicon.ico">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
+<title>HBO vs Netflix</title>
+</head>
+<body>
+    <!--Cabecera-->
+    <header class="container-fluid">
+        <div class="row bg-grey">
+            <div class="col-6 align-self-center">
+                <h1 class="text-secondary display-5">Series al dia</h1>
+            </div>
+            <div class="col-6">
+                <div class="row justify-content-center">
+                    <!--Boton visual-->
+                      <div class="col-12 col-md-6"><button class="col-8 col-md-12 btn bg-secondary  text-white py-4 mt-2 mb-2 " data-toggle="modal" data-target="#iniciodeSesion">Entrar</button></div>
+                      <div class="col-12 col-md-6"><a class="col-8 col-md-12 btn btn-secondary   py-4 mt-2 mb-2 " href="formulario.html">Crear Cuenta</a></div>   
+                    <!--Parte emergente-->
+                    <div class="modal" id="iniciodeSesion" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                          <div class="modal-content bg-grey">
+                            <div class="modal-header">
+                              <h6 class="modal-title text-secondary">Introduzca sus datos</h6>
+                                    <button type="button" class="close text-white" data-dismiss="modal">X</button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                      <label for="Email" class="text-secondary ">Email del Usuario</label>
+                                      <input type="email" class="form-control" id="Email" placeholder="Introduzca su cuenta">
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="Contraseña" class="text-secondary ">Contraseña</label>
+                                      <input type="password" class="form-control" id="Contraseña">
+                                    </div>
+                                  </form>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Salir</button>
+                              <button type="button" class="btn btn-secondary">Entrar</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                
+            </div>
+        </div>
+    </header>
+   
+    <!--Menú principal-->
+  <div class="container-fluid bg-light"> 
+    <nav class="navbar navbar-expand-md navbar-light ">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuPrincipal">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="row collapse navbar-collapse" id="menuPrincipal">
+            <ul class="col-12 navbar-nav justify-content-around ml-2 ml-md-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">HBO</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="juegodetronos_hbo.html">Juego de tronos</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="chernobyl_hbo.html">Chernobyl</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="friends_hbo.html">Friends</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="estrenos_hbo.html">Estrenos/Novedades</a>
+                </div>
+              </li>
+              <li class="nav-item  active">
+                  <a class="nav-link " href="index.html">HBO vs Netflix</a>
+              </li>
+              <li class="nav-item dropdown ">
+                  <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Netflix</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="peakyblinders_netflix.html">Peaky Blinders</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="breakingbad_netflix.html">Breaking Bad</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="strangerthings_netflix.html">Stranger Things</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="estrenos_netflix.html">Estrenos/Novedades</a>
+                  </div>
+                </li>
+            </ul>
+          </div>
+      </nav>
+  </div> 
+
+    <!--Menú lateral + contenido principal de la página-->
+    <div class="container-fluid">
+        <main class="row">
+          <!--Menu lateral-->
+            <nav class="navbar col-md-3 col-xl-2 bg-grey navbar-dark align-items-start 	d-none d-md-block">
+                <ul class="navbar-nav flex-column sticky-top">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hbo">Historia HBO</a>
+                    </li>   
+                    <li class="nav-item">
+                      <a class="nav-link" href="#netflix">Historia Netflix</a>
+                    </li> 
+                    <li class="nav-item">
+                      <a class="nav-link" href="#vs">HBO vs Netflix</a>
+                    </li> 
+                </ul>
+            </nav>
+         
+          <!--Contenido principal-->
+          <article class="col-md-9 col-xl-10 px-0 my-xl-4">
+            <!--Sección de hbo-->
+              <section class="container-fluid container-xl  bg-secondary text-center">
+                  <h2 id="hbo">HBO</h2>
+              </section>
+              <section class="container-fluid container-xl ">
+                <div class="row text-white-50">
+                  <figure class="col-12 col-md-6 col-xl-4 text-center"><img src="img/creadorHbo.jpg" alt="Charles Dolan" class="img-fluid"></figure>
+                  <div class="col-md-6 col-xl-8">
+                      <div class="row">
+                          <article class="col-md-12 col-xl-6"><h4>Historia Hbo</h4>
+                            <p>Cuando Charles Francis Dolan (1965) ganó una concesión de televisión en el bajo Manhattan, creó así hbo el cual fue el primer canal de cable y satélite que no usaba la red de difusión terrestre de televisión habitual, siendo el primero en transmitir un encuentro de boxeo en directo en el mundo. Más adelante Charles codificó la señal para que solo recibieran señal los que pagaban por ella 6$.</p>
+                            </article>
+                          <article class="col-md-12 col-xl-6"><h4>Actualidad Hbo</h4>
+                            <p>Actualmente, HBO es un servicio premium de suscripción de vídeo que ofrece a sus abonados las temporadas completas de las series más populares como Juego de tronos.Ha conseguido llegar a más de 60 países a través del servicio de suscripción y sus producciones propias. HBO España tiene un acuerdo exclusivo con Vodafone que permite a sus clientes acceder al servicio de streaming a través de Vodafone TV. Tiene 140 millones de suscriptores y tiene 2.000 títulos a nivel mundial.</p></article>
+                      </div>
+                  </div>
+              </div>
+              </section>
+              <!--Sección Netflix-->
+              <section class="container-fluid container-xl  bg-secondary text-center">
+                <h2 id="netflix">Netflix</h2>
+            </section>
+            <section class="container-fluid container-xl text-white-50">
+              <div class="row">
+                <figure class="col-12 col-md-6 col-xl-4 text-center"><img src="img/creadorNetflix.jpg" alt="Reed Hastings" class="img-fluid"></figure>
+                <div class="col-md-6 col-xl-8">
+                    <div class="row">
+                        <article class="col-md-12 col-xl-6"><h4>Historia Netflix</h4>
+                          <p>Netflix, fue creado el 29 de agosto de 1997, por Marc Randolph y Reed Hastings. La historia de Netflix nace cuando Reed Hasting (futuro creador) alquiló Apolo 13 en la cadena de videoclubs Blockbuster y al devolverla con retraso, tuvo que pagar 40$ de penalización. En 1998 Netflix comenzaba a operar, vendiendo DVDs online con opción a alquilarlos también. El alquiler funcionaba de manera similar a un videoclub tradicional.
+                          </p>
+                          </article>
+                        <article class="col-md-12 col-xl-6"><h4>Actualidad Netflix</h4>
+                          <p>Actualmente, los suscriptores de Netflix pueden elegir entre 10000 series en todo el mundo entre las que hay largometrajes de todo tipo. Está presente en más de 190 países y cuenta con más de 100 millones de abonados. Este software tiene una constante renovación, ofreciendo estrenos mensuales para no aburrir a su audiencia y no quedarse estancados. Además, la plataforma tiene un Sistema de Recomendaciones que te hará descubrir series y películas que te pueden gustar.</p></article>
+                    </div>
+                </div>
+            </div>
+            </section>
+            <section class="container-fluid container-xl  bg-secondary text-center">
+              <!--Sección Hbo vs Netflix-->
+              <h2 id="vs">Hbo vs Netflix</h2>
+            </section>
+            <section class="container-fluid container-xl">
+              <div class="row">
+                <figure class="col-md-6 col-xl-4 d-none d-md-block text-center"><img src="img/logoHbo.jpg" alt="Logo de Hbo" class="img-fluid"></figure>
+                <figure class="col-12 d-md-none text-center"><img src="img/hboVsNetflix.jpg" alt="Logos Hbo y Netflix"></figure>
+                <div class="col-md-6 col-xl-4 d-none d-md-block text-white-50">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="row">
+                    <article class="col-xl-12">
+                        <h4>Ventajas Hbo</h4>
+                        <p>El pago es mensual y no tiene permanencia. Esta compañia cuenta con contenido propio.
+                          Su aplicación móvil muy es fácil de entender.Cuenta con la posibilidad de descargar contenido y verlo offline.Puedes obtener un periodo de prueba gratuito de 1 semana.
+                          </p>
+                    </article>
+                    <article class="col-xl-12">
+                        <h4>Desventajas</h4>
+                        <p>Su precio es más elevado que el de otras plataformas.Solo permite hasta 2 dispositivos.
+                          Cuenta con tanto contenido que puedes emplear mucho tiempo en la elección sino tienes claro lo que deseas ver.
+                          </p>
+                    </article>
+                  </div>
+                  </div>
+                  </div>
+                </div>
+                <div class="col-md-8 col-xl-4 d-none d-md-block">
+                  <table class="table text-white-50 ">
+                    <thead class="thead-dark">
+                      <tr>
+                        <th scope="col">Tarifas</th>
+                        <th scope="col">Plan unico</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Precio</th>
+                        <td>8,99€/mes</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Calidad imagen</th>
+                        <td>HD</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Pantallas a la vez</th>
+                        <td>2</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Descargas permitidas</th>
+                        <td>2 Dispositivos</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="d-md-none text-center">
+                  <table class="table text-white-50">
+                    <thead class="thead-dark">
+                      <tr>
+                        <th scope="col">Plataforma</th>
+                        <th scope="col">Hbo</th>
+                        <th scope="col" class="text-center" colspan="2">Netflix</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <tr>
+                          <th scope="col">Tarifas</th>
+                          <td scope="col">Plan unico</td>
+                          <td scope="col">Basico</td>
+                          <td scope="col">Premium</td>
+
+                        </tr>
+                        <th scope="row">Precio</th>
+                        <td>8,99€/mes</td>
+                        <td>7,99€/mes</td>
+                        <td>15,99€/mes</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Calidad imagen</th>
+                        <td>HD</td>
+                        <td>SD</td>
+                        <td>HD/UHD</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Pantallas</th>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>4</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Descargas</th>
+                        <td>2 Disp.</td>
+                        <td>1 Disp.</td>
+                        <td>4 Disp.</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </section>
+            <section class="container-fluid container-xl">
+              <div class="row ">
+                <figure class="col-md-6 col-xl-4 d-none d-md-block"><img src="img/logoNetflix.jpg" alt="Logo de Hbo" class="img-fluid"></figure>
+                <div class="col-md-6 col-xl-4 d-none d-md-block text-white-50">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="row">
+                    <article class="col-xl-12">
+                        <h4>Ventajas Netflix</h4>
+                        <p>Puedes crear un perfil. Tienes estrenos mensuales. El catálogo se actualiza cada mes y ofrece una gran variedad de historias originales, se puede oprimir el botón pausa y verla en el momento adecuado. Puedes darle de baja y no tendrás que pagar un monto adicional por su anulación. También ofrece la opción de descargar películas que puedes ver luego sin ninguna conexión de internet.
+                          </p>
+                    </article>
+                    <article class="col-xl-12">
+                        <h4>Desventajas</h4>
+                        <p>La tarifa básica cuesta 7,99 euros al mes; la tarifa estándar cuesta 9,99 euros al mes; y la tarifa Premium tiene un costo de 11,99 euros al mes. Los estrenos del cine suelen tardar mucho en llegar.Únicamente se puede entrar a la plataforma mediante un dispositivo a la vez.Netflix elimina programación constantemente para mantener la velocidad del servidor. cada cierto tiempo el servidor de entretenimiento retira del catálogo cientos de contenidos.
+
+                          </p>
+                    </article>
+                  </div>
+                </div>
+                  </div>
+                </div>
+                <div class="col-md-8 col-xl-4 d-none d-md-block">
+                  <table class="table text-white-50">
+                    <thead class="thead-dark">
+                      <tr>
+                        <th scope="col" >Tarifas</th>
+                        <th scope="col">Basico</th>
+                        <th scope="col">Premium</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Precio</th>
+                        <td>7,99€/mes</td>
+                        <td>15,99€/mes</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Calidad imagen</th>
+                        <td>SD</td>
+                        <td>HD/UHD</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Pantallas a la vez</th>
+                        <td>1</td>
+                        <td>4</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Descargas permitidas</th>
+                        <td>1 Dispositivo</td>
+                        <td>4 Dispositivos</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="d-md-none ">
+                  <table class="table text-white-50 text-center">
+                    <thead class="thead-dark">
+                      <tr>
+                        <th scope="col">Plataforma</th>
+                        <th scope="col">Hbo</th>
+                        <th scope="col">Netflix(Básico)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Precio</th>
+                        <td>Algo caro</td>
+                        <td>Mas barato</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Calidad imagen</th>
+                        <td>Mejor</td>
+                        <td>Peor</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Pantallas</th>
+                        <td>+</td>
+                        <td>-</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Descargas</th>
+                        <td>+</td>
+                        <td>-</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Cantidad Series</th>
+                        <td>Inferior</td>
+                        <td>Superior mas 2.000</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </section>
+
+
+            </article>
+          </main>
+        </div>
+      
+    <!--Pie de pagina-->
+    <footer class="bg-secondary container-fluid">
+      <div class="row">
+          <p class="col-xl-12 text-white text-center">Escuela Estech 2021</p>
+      </div>
+      <div class="row justify-content-center">
+          <img src="img/facebook.png" alt="Logo Facebook" class="col-2 col-xl-1 img-fluid">
+          <img src="img/twitter.png" alt="Logo Twitter" class="col-2 col-xl-1 img-fluid">
+          <img src="img/youtube.png" alt="Logo Youtube" class="col-2 col-xl-1 img-fluid">
+      </div>
+  </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+</html>
+<!--Maquetacion 1-->

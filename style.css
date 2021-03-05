@@ -1,0 +1,10 @@
+.bg-grey{
+    background-color: rgb(48, 47, 47);
+}
+
+body{
+    background-image: url("https://media.tenor.com/images/a5a747610bd751885da136dba62bc88f/tenor.gif");
+}
+*{
+    font-family: 'RocknRoll One', sans-serif;
+}

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="icon" href="img/favicon.ico">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
+<title>HBO vs Netflix</title>
+</head>
+<body>
+    <!--Cabecera-->
+    <header class="container-fluid">
+        <div class="row bg-grey">
+            <div class="col-6 align-self-center">
+                <h1 class="text-secondary display-5">Series al dia</h1>
+            </div>
+            <div class="col-6">
+                <div class="row justify-content-center">
+                    <!--Boton visual-->
+                    <div class="col-12 col-md-6"><button class="col-8 col-md-12 btn bg-secondary  text-white py-4 mt-2 mb-2 " data-toggle="modal" data-target="#iniciodeSesion">Entrar</button></div> 
+                    <div class="col-12 col-md-6"><a class="col-8 col-md-12 btn btn-secondary   py-4 mt-2 mb-2 " href="formulario.html">Crear Cuenta</a></div>
+                    <!--Parte emergente-->
+                    <div class="modal" id="iniciodeSesion" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                          <div class="modal-content bg-grey">
+                            <div class="modal-header">
+                              <h6 class="modal-title text-secondary">Introduzca sus datos</h6>
+                                    <button type="button" class="close text-white" data-dismiss="modal">X</button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                      <label for="Email" class="text-secondary ">Email del Usuario</label>
+                                      <input type="email" class="form-control" id="Email" placeholder="Introduzca su cuenta">
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="Contraseña" class="text-secondary ">Contraseña</label>
+                                      <input type="password" class="form-control" id="Contraseña">
+                                    </div>
+                                  </form>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Salir</button>
+                              <button type="button" class="btn btn-secondary">Entrar</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+   
+    <!--Menú principal-->
+  <div class="container-fluid bg-light"> 
+    <nav class="navbar navbar-expand-md navbar-light ">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuPrincipal">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="row collapse navbar-collapse" id="menuPrincipal">
+            <ul class="col-12 navbar-nav justify-content-around ml-2 ml-md-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">HBO</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="juegodetronos_hbo.html">Juego de tronos</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="chernobyl_hbo.html">Chernobyl</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="friends_hbo.html">Friends</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="estrenos_hbo.html">Estrenos/Novedades</a>
+                </div>
+              </li>
+              <li class="nav-item  active">
+                  <a class="nav-link " href="index.html">HBO vs Netflix</a>
+              </li>
+              <li class="nav-item dropdown ">
+                  <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Netflix</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="peakyblinders_netflix.html">Peaky Blinders</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="breakingbad_netflix.html">Breaking Bad</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="strangerthings_netflix.html">Stranger Things</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="estrenos_netflix.html">Estrenos/Novedades</a>
+                  </div>
+                </li>
+            </ul>
+          </div>
+      </nav>
+  </div> 
+
+    <!--Menú lateral + contenido principal de la página-->
+    <div class="container-fluid">
+        <main class="row">
+          <!--Menu lateral-->
+            <nav class="navbar col-md-3 col-xl-2 bg-grey navbar-dark align-items-start 	d-none d-md-block">
+                
+            </nav>
+         
+          <!--Contenido principal-->
+          <article class="col-md-9 col-xl-10 px-0 my-xl-4">
+              <section class="container-fluid container-xl ">
+                    <div class="row bg-secondary text-center"> 
+                        <div class="col-12"><h1>Estrenos Netflix</h1></div>
+                    </div>
+                
+                    <div class="row">
+                        <div class="embed-responsive embed-responsive-16by9 d-none d-none d-md-block">
+                            
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/GH6dG3AB3AQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        <div class="col-12 d-md-none"><img src="img/cabeceraEstrenosNetflix.jpg" alt="Logo Netflix" class="w-100"></div>
+                    </div>
+                
+                    <div class="row text-white-50">
+                        <div class="col-12 col-xl-6">
+                            <h3>La casa de papel (temporada 5)</h3>
+                            <div class="row">
+                                <div class="col-md-6 col-xl-12 d-none d-md-block embed-responsive embed-responsive-16by9">
+                                    
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/GZD8pBF9J2E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div class="col-4 d-md-none">
+                                    <img src="img/casadepapelEstrenoNetflix.jpg" alt="Serie Casa de papel" class="img-fluid">
+                                </div>
+                                <div class="col-8 col-md-6 col-xl-12">
+                                    Un misterioso hombre conocido como «El Profesor» está planeando el mayor atraco de la historia: entrar en la Fábrica Nacional de Moneda y Timbre e imprimir 2400 millones de euros. Para llevar a cabo este ambicioso plan, recluta a un equipo de ocho personas con ciertas habilidades y que no tienen nada que perder. Este equipo requiere de once días de reclusión en la Fábrica, durante los cuales tendrán que lidiar con las fuerzas de élite de la policía y sesenta y siete rehenes.Prefista para 2021
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-xl-6">
+                            <h3>Elite (temporada 4)</h3>
+                            <div class="row">
+                                <div class="col-md-6 col-xl-12 d-none d-md-block order-md-2 order-xl-1">
+                                    <div class="col-md-12 col-xl-12 d-none d-md-block embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/4SwrEGzDGks?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                                <div class="col-4 d-md-none"><img src="img/eliteEstrenoNetflix.jpg" alt="Serie Elite" class="img-fluid">
+                                </div>
+                                <div class="col-8 col-md-6 col-xl-12 order-md-1 order-xl-2">
+                                    Élite narra la vida de un grupo de estudiantes de un exclusivo colegio privado, al que llegan tres nuevos alumnos becados de clase humilde, provocando una confrontación entre ricos y pobres que desemboca en asesinatos y desapariciones de alumnos. La serie explora diversos conceptos asociados con los dramas adolescentes. La principal característica de la serie Élite es que por una parte se muestran clichés adolescentes, pero al mismo tiempo se presentan otros temas más progresivos que normalmente no son tratados en las ficciones sobre adolescentes: diversidad sexual, diferencias culturales, drogas, enfermedades, acoso, uso de redes sociales, corrupción, asesinatos, robos, etc.Prevista para 2022.</div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-xl-6">
+                            <h3>Peaky Blinders (temporada 6)</h3>
+                            <div class="row">
+                                <div class="col-md-6 col-xl-12 d-none d-md-block embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/5ZED0Yunxms" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div class="col-4 d-md-none">
+                                    <img src="img/peakyBlidersEstrenoNetflix.jpg" alt="Serie Peaky Blinders" class="img-fluid">
+                                </div>
+                                <div class="col-8 col-md-6 col-xl-12">
+                                    Una familia de gánsteres irlandeses de origen gitano asentada en Birmingham, los Peaky Blinders, justo después de la Primera Guerra Mundial, dirige un local de apuestas hípicas en la ciudad. Las acciones del ambicioso y peligroso jefe de la banda Tommy Shelby llaman la atención del Inspector jefe Chester Campbell, un detective de la Real Policía Irlandesa que es enviado por Winston Churchill desde Belfast a Birmingham donde había sido enviado a limpiar la ciudad del Ejército Republicano Irlandés (IRA), comunistas, pandillas y delincuentes comunes. Prevista para final de 2021.</div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-xl-6">
+                            <h3>Stranger Things (temporada 4)</h3>
+                            <div class="row">
+                                <div class="col-md-6 col-xl-12 d-none d-md-block order-md-2 order-xl-1">
+                                    <div class="col-md-12 col-xl-12 d-none d-md-block embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/CJ4Yv3hSXEk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                                <div class="col-4 d-md-none"><img src="img/eliteEstrenoNetflix.jpg" alt="Serie Stranger Things" class="img-fluid">
+                                </div>
+                                <div class="col-8 col-md-6 col-xl-12 order-md-1 order-xl-2">
+                                    La historia arranca durante la década de los 80, en el pueblo ficticio de Hawkins, Indiana, cuando un niño llamado Will Byers desaparece misteriosamente, hecho que destapa los extraños sucesos que tienen lugar en la zona, producto de una serie de experimentos que realiza el gobierno en un laboratorio científico cercano. Además, en la ciudad aparecen fuerzas sobrenaturales inquietantes y una niña muy extraña. Ella, junto con los amigos de Will, se encargará de buscarlo, sin imaginar lo que tendrán que enfrentar para encontrarlo. Inadvertidamente, crearon un portal a una dimensión alternativa llamada "Upside Down" ("El Otro Lado"). La influencia del Otro Lado comienza a afectar a los desconocidos residentes de Hawkins de manera calamitosa. Prevista para verano de 2021</div>
+                            </div>
+                        </div>
+                        </div>
+                        
+                        <div class="row justify-content-around">
+                            <div class="col3"><a class="btn btn-success" data-toggle="collapse" href="#collapse">
+                                Curiosidad 1
+                              </a></div>
+                              <div class="col3"><a class="btn btn-success" data-toggle="collapse" href="#collapse2">
+                                Curiosidad 2</a></div>
+                                
+                                <div class="col3"><a class="btn btn-success" data-toggle="collapse" href="#collapse3">
+                                    Curiosidad 3
+                                    </a></div>
+                        </div>
+                          <div class="collapse" id="collapse">
+                            <div class="card card-body">
+                                Los empleados de Netflix deben comprometerse a nunca revelar las locaciones donde almacenan los DVD’s. Entre sus empleados, se encuentran los inspectores, que están encargados de inspeccionar y limpiar cada DVD que posee la compañía. Un sólo inspector llega a inspeccionar 650 DVD’s en una hora, que harían un total de 5.200 DVD’s por día de trabajo.
+                            </div>
+                          </div>
+                          <div class="collapse" id="collapse2">
+                            <div class="card card-body">
+                                Para testear el funcionamiento de sus servicios, Netflix realizó una película propia que todavía se encuentra en su catálogo. Su nombre es “Example Movie” (Película de Ejemplo) y fue rodada en una de las oficinas principales de la compañía. Contiene escenas bizarras y muy extrañas. Se cree que se utilizó para testear la cantidad de cuadros por segundo estándar.
+                            </div>
+                          </div>
+                          <div class="collapse" id="collapse3">
+                            <div class="card card-body">
+                                Blockbuster, que alguna vez fue el principal servicio de alquiler de videos en el mundo y llegó a tener más de 9.000 tiendas, rechazó varias veces ofertas para comprar Netflix. Una de ellas, era de tan sólo 50 millones de dólares. Hoy en día, Netflix vale 20 mil millones.
+                            </div>
+                          </div>
+            </section>
+            </article>
+          </main>
+        </div>
+      <!--Pie de pagina-->
+    <footer class="bg-secondary container-fluid">
+      <div class="row">
+          <p class="col-xl-12 text-white text-center">Escuela Estech 2021</p>
+      </div>
+      <div class="row justify-content-center">
+          <img src="img/facebook.png" alt="Logo Facebook" class="col-2 col-xl-1 img-fluid">
+          <img src="img/twitter.png" alt="Logo Twitter" class="col-2 col-xl-1 img-fluid">
+          <img src="img/youtube.png" alt="Logo Youtube" class="col-2 col-xl-1 img-fluid">
+      </div>
+  </footer>
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+</html>
+<!--Maquetacion 3-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

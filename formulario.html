@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="icon" href="img/favicon.ico">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
+<title>HBO vs Netflix</title>
+</head>
+<body>
+    <!--Cabecera-->
+    <header class="container-fluid">
+        <div class="row bg-grey">
+            <div class="col-6 align-self-center">
+                <h1 class="text-secondary display-5">Series al dia</h1>
+            </div>
+            <div class="col-6">
+                <div class="row justify-content-center">
+                    <!--Boton visual-->
+                    <div class="col-12 col-md-6"><button class="col-8 col-md-12 btn bg-secondary  text-white py-4 mt-2 mb-2 " data-toggle="modal" data-target="#iniciodeSesion">Entrar</button></div>
+                    <div class="col-12 col-md-6"><a class="col-8 col-md-12 btn btn-secondary   py-4 mt-2 mb-2 " href="formulario.html">Crear Cuenta</a></div>
+                    <!--Parte emergente-->
+                    <div class="modal" id="iniciodeSesion" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                          <div class="modal-content bg-grey">
+                            <div class="modal-header">
+                              <h6 class="modal-title text-secondary">Introduzca sus datos</h6>
+                                    <button type="button" class="close text-white" data-dismiss="modal">X</button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                      <label for="Email" class="text-secondary ">Email del Usuario</label>
+                                      <input type="email" class="form-control" id="Email" placeholder="Introduzca su cuenta">
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="Contraseña" class="text-secondary ">Contraseña</label>
+                                      <input type="password" class="form-control" id="Contraseña">
+                                    </div>
+                                  </form>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Salir</button>
+                              <button type="button" class="btn btn-secondary">Entrar</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+   
+    <!--Menú principal-->
+  <div class="container-fluid bg-light"> 
+    <nav class="navbar navbar-expand-md navbar-light ">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuPrincipal">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="row collapse navbar-collapse" id="menuPrincipal">
+            <ul class="col-12 navbar-nav justify-content-around ml-2 ml-md-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">HBO</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="juegodetronos_hbo.html">Juego de tronos</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="chernobyl_hbo.html">Chernobyl</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="friends_hbo.html">Friends</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="estrenos_hbo.html">Estrenos/Novedades</a>
+                </div>
+              </li>
+              <li class="nav-item  active">
+                  <a class="nav-link " href="index.html">HBO vs Netflix</a>
+              </li>
+              <li class="nav-item dropdown ">
+                  <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Netflix</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="peakyblinders_netflix.html">Peaky Blinders</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="breakingbad_netflix.html">Breaking Bad</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="strangerthings_netflix.html">Stranger Things</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="estrenos_netflix.html">Estrenos/Novedades</a>
+                  </div>
+                </li>
+            </ul>
+          </div>
+      </nav>
+  </div> 
+
+    <!--Menú lateral + contenido principal de la página-->
+    <div class="container-fluid">
+        <main class="row">
+          <!--Menu lateral-->
+            <nav class="navbar col-md-3 col-xl-2 bg-grey navbar-dark align-items-start 	d-none d-md-block">
+            </nav>
+         
+          <!--Contenido principal-->
+          <article class="col-md-9 col-xl-10 px-0 my-xl-4">
+                
+                <main class="container-fluid container-xl text-white-50">
+                    <div class="row">
+                        <div class="col-12 bg-secondary text-center" id="trailer"><h2>Regitrate Gratis</h2></div>
+                    </div>
+                    
+                        <h4 class="text-center">Datos personales</h4>
+
+                        <form action="post">
+                        <div class="form-group">
+                            <div class="row justify-content-around">
+                                <div class="col-md-3 col-xl-2">
+                                     <label for="Nombre">Nombre</label>
+                                     <input type="text" class="form-control" id="Nombre" placeholder="Nombre">
+                                </div>
+                                <div class="col-md-3 col-xl-2">
+                                    <label for="Nombre">Apellido</label>
+                                    <input type="text" class="form-control" id="Apellido">
+                                </div>
+                                <div class="col-md-8 col-xl-2">
+                                     <label for="usu">Usuario</label>
+                                     <input type="text" class="form-control" id="usu">
+                                    </div>
+                            </div>
+                            </div>
+                            <div class="form-group">
+                            <div class="row justify-content-around">
+                                <div class="col-6 col-md-3 col-xl-2">
+                                    <div class="form-check">
+                                        <h6>Sexo</h6>
+                                        <input class="form-check-input" type="radio" name="radio"  value="Men" checked>
+                                        <label class="form-check-label" for="radio">Hombre
+                                        </label>
+                                      </div>
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="radio" value="Women">
+                                        <label class="form-check-label" for="radio">Mujer</label>
+                                      </div>
+                                </div>
+                                <figure class="col-6 d-md-none"><img src="img/hboVsNetflix.jpg" alt="Logo Hbo y Netflix" class="img-fluid"></figure>
+                                <div class="col-md-3 col-xl-2">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control" id="email">
+                                </div>
+                                <div class="col-md-8 col-xl-2">
+                                    <label for="pass">Contraseña</label>
+                                    <input type="password" class="form-control" id="pass" placeholder="Contraseña segura">
+                                </div>
+                            </div>
+                            </div>
+                            <h4 class="text-center">Direccion</h4>
+                            <div class="form-group">
+                                <div class="row justify-content-around">
+                                    <div class="col-md-5 col-xl-2">
+                                         <label for="pais">Pais</label>
+                                         <input type="text" class="form-control" id="Nombre" placeholder="Grecia">
+                                    </div>
+                                    <div class="col-md-5 col-xl-2">
+                                        <label for="Provincia">Provincia</label>
+                                        <input type="text" class="form-control" id="Provincia">
+                                    </div>
+                                    <div class="col-md-5 col-xl-2">
+                                         <label for="Localidad">Localidad</label>
+                                         <input type="text" class="form-control" id="Localidad">
+                                        </div>
+                                        <div class="col-md-5 col-xl-2">
+                                            <label for="CP">Código Postal</label>
+                                            <input type="number" class="form-control" id="CP">
+                                        </div>
+                                </div>
+                                
+                                </div>
+                                <div class="form-group">
+                                    <div class="row justify-content-center">
+                                        <div class="col-md-8 col-xl-10">
+                                             <label for="pais">Direccion</label>
+                                             <input type="text" class="form-control" id="Nombre" value="Calle/">
+                                        </div>
+                                        
+                                    </div>
+
+                                    </div>
+                            <h6 class="text-center">Noticias</h6>
+                            <div class="row">
+                                <div class="col-md-6 col-xl-12">
+                            <div class="row justify-content-around">
+                                <div class="col-md-12 col-xl-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="radio1"  value="todas" checked>
+                                        <label class="form-check-label" for="radio1">Recibir las de todas las series
+                                        </label>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-12 col-xl-6">
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="radio1" value="algunas">
+                                        <label class="form-check-label" for="radio">Solo recibir las favoritas</label>
+                                      </div>
+                                    </div>
+                            </div>
+                        </div>
+                            <div class="col-md-6 col-xl-12">
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-12 col-xl-6">
+                                <label for="exampleFormControlSelect2">Elige</label>
+                                <select multiple class="form-control" id="exampleFormControlSelect2">
+                                  <option>Peaky Blinders</option>
+                                  <option>Chernobyl</option>
+                                  <option>Juego de tronos</option>
+                                  <option>Breaking Bad</option>
+                                  <option>Stranger Things</option>
+                                  <option>Friends</option>
+                                </select>
+                                </div>
+                                <div class="col-xl-6 d-none d-xl-block">
+                                    <img src="img/hboVsNetflix.jpg" alt="Logos Hbo y Netflix">
+                                </div>
+                                </div>
+                              </div>
+                            </div>
+                            </div>
+
+                        
+                              <h6 class="text-center">Datos Personales (Opcional)</h6>
+                              
+                              <div class="form-group">
+                                  <div class="row justify-content-around">
+                                      <div class="col-md-6 col-xl-4">
+                                    <label for="foto">Añadir foto de perfil</label>
+                                    <input type="file" class="form-control-file" id="foto">
+                                    </div>
+
+                                    <div class="col-md-6 col-xl-4">
+                                        <label for="exampleFormControlTextarea1">Breve comentario sobre ti...</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    </div>
+                                    
+                                  </div>
+                                
+                              </div>
+
+                              
+                              <div class="form-group">
+                                  <div class="row justify-content-center">
+                                  <div class="col-md-6 col-xl-4">
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="yes" id="defaultCheck1" checked>
+                                <label class="form-check-label" for="defaultCheck1">Recibir notificaciones por gmail</label>
+                              </div>
+                            </div>
+                            <div class="col-md-6 col-xl-4">
+                              <button type="submit" class="btn btn-success">Enviar</button>
+                        </div>
+                    </div>
+                  
+                        </form>
+                          
+                    
+                       
+                                    
+                </main>
+                
+
+            </article>
+          </main>
+        </div>
+      <!--Pie de pagina-->
+    <footer class="bg-secondary container-fluid">
+      <div class="row">
+          <p class="col-xl-12 text-white text-center">Escuela Estech 2021</p>
+      </div>
+      <div class="row justify-content-center">
+          <img src="img/facebook.png" alt="Logo Facebook" class="col-2 col-xl-1 img-fluid">
+          <img src="img/twitter.png" alt="Logo Twitter" class="col-2 col-xl-1 img-fluid">
+          <img src="img/youtube.png" alt="Logo Youtube" class="col-2 col-xl-1 img-fluid">
+      </div>
+  </footer>
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+</html>
+<!--Maquetacion 2-->

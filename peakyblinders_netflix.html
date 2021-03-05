@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="icon" href="img/favicon.ico">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
+<title>HBO vs Netflix</title>
+</head>
+<body>
+    <!--Cabecera-->
+    <header class="container-fluid">
+        <div class="row bg-grey">
+            <div class="col-6 align-self-center">
+                <h1 class="text-secondary display-5">Series al dia</h1>
+            </div>
+            <div class="col-6">
+                <div class="row justify-content-center">
+                    <!--Boton visual-->
+                    <div class="col-12 col-md-6"><button class="col-8 col-md-12 btn bg-secondary  text-white py-4 mt-2 mb-2 " data-toggle="modal" data-target="#iniciodeSesion">Entrar</button></div>
+                      <div class="col-12 col-md-6"><a class="col-8 col-md-12 btn btn-secondary   py-4 mt-2 mb-2 " href="formulario.html">Crear Cuenta</a></div>
+                    <!--Parte emergente-->
+                    <div class="modal" id="iniciodeSesion" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                          <div class="modal-content bg-grey">
+                            <div class="modal-header">
+                              <h6 class="modal-title text-secondary">Introduzca sus datos</h6>
+                                    <button type="button" class="close text-white" data-dismiss="modal">X</button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                      <label for="Email" class="text-secondary ">Email del Usuario</label>
+                                      <input type="email" class="form-control" id="Email" placeholder="Introduzca su cuenta">
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="Contraseña" class="text-secondary ">Contraseña</label>
+                                      <input type="password" class="form-control" id="Contraseña">
+                                    </div>
+                                  </form>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Salir</button>
+                              <button type="button" class="btn btn-secondary">Entrar</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+   
+    <!--Menú principal-->
+  <div class="container-fluid bg-light"> 
+    <nav class="navbar navbar-expand-md navbar-light ">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuPrincipal">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="row collapse navbar-collapse" id="menuPrincipal">
+            <ul class="col-12 navbar-nav justify-content-around ml-2 ml-md-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">HBO</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="juegodetronos_hbo.html">Juego de tronos</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="chernobyl_hbo.html">Chernobyl</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="friends_hbo.html">Friends</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="estrenos_hbo.html">Estrenos/Novedades</a>
+                </div>
+              </li>
+              <li class="nav-item  active">
+                  <a class="nav-link " href="index.html">HBO vs Netflix</a>
+              </li>
+              <li class="nav-item dropdown ">
+                  <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Netflix</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="peakyblinders_netflix.html">Peaky Blinders</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="breakingbad_netflix.html">Breaking Bad</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="strangerthings_netflix.html">Stranger Things</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="estrenos_netflix.html">Estrenos/Novedades</a>
+                  </div>
+                </li>
+            </ul>
+          </div>
+      </nav>
+  </div> 
+
+    <!--Menú lateral + contenido principal de la página-->
+    <div class="container-fluid">
+        <main class="row">
+          <!--Menu lateral-->
+            <nav class="navbar col-md-3 col-xl-2 bg-grey navbar-dark align-items-start 	d-none d-md-block">
+                <ul class="navbar-nav flex-column sticky-top">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#trailer">Trailer</a>
+                    </li>   
+                    <li class="nav-item">
+                      <a class="nav-link" href="#netflix">Criticas/Personajes</a>
+                    </li> 
+                    <li class="nav-item">
+                      <a class="nav-link" href="#vs">Sabias que...</a>
+                    </li> 
+                </ul>
+            </nav>
+         
+          <!--Contenido principal-->
+          <article class="col-md-9 col-xl-10 px-0 my-xl-4">
+                
+                <main class="container-fluid container-xl">
+                    <div class="row">
+                        <div class="col-12 bg-secondary text-center" id="trailer"><h2>Peaky Blinders</h2></div>
+                    </div>
+                    <div class="row my-3">
+                        <div class="col-md-6 order-md-2 order-xl-1 ">
+                                <div class="embed-responsive embed-responsive-16by9 d-none d-none d-md-block">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/H282c9q2MUU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                            <div class="d-md-none">
+                                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                    <div class="carousel-inner">
+                                      <div class="carousel-item active">
+                                        <img src="img/carruoselPeakyUno.jpg" class="d-block w-100" alt="Imagen de Breaking Bad">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img src="img/carruoselPeakyDos.jpg" class="d-block w-100" alt="Imagen de Breaking Bad">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img src="img/carruoselPeakyTres.jpg" class="d-block w-100" alt="Imagen de Breaking Bad">
+                                      </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                      <span class="carousel-control-prev-icon"></span>
+                                      <span class="sr-only">Anterior</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                      <span class="carousel-control-next-icon"></span>
+                                      <span class="sr-only">Siguiente</span>
+                                    </a>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 order-md-1 order-xl-2 text-white-50">
+                            <h4>¿De que trata?</h4>
+                            <p>Una familia de gánsteres irlandeses de origen gitano asentada en Birmingham, los Peaky Blinders, justo después de la Primera Guerra Mundial, dirige un local de apuestas hípicas en la ciudad. Las acciones del ambicioso y peligroso jefe de la banda Tommy Shelby llaman la atención del Inspector jefe Chester Campbell, un detective de la Real Policía Irlandesa que es enviado por Winston Churchill desde Belfast a Birmingham donde había sido enviado a limpiar la ciudad del Ejército Republicano Irlandés (IRA), comunistas, pandillas y delincuentes comunes.6​7​ Winston Churchill (interpretado por Andy Nyman en la temporada 1 y Richard McCabe en la temporada 2) es acusado de suprimir el desorden y levantamiento en Birmingham y recuperar un alijo de armas robado destinado a ser enviado a Libia.8​9​10​ La primera temporada concluye el 3 de diciembre de 1919 "Black Star Day", el evento donde los Peaky Blinders planean hacerse cargo de los lanzamientos de apuestas de Billy Kimber en las carreras de Worcester.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 bg-secondary text-center" id="netflix"><h2 class="d-none d-md-block">Personajes y Criticas</h2><h2 class="d-md-none">Criticas</h2></div>
+                    </div>
+                    <div class="row my-3">
+                        <div class="col-md-6 order-md-2 order-xl-1">
+                        <section class="row">
+                            <div class="col-md-12 col-xl-6 d-md-block d-none">
+                                <div class="card">
+                                    <div id="carouselExampleControls" class="carousel slide card-img-top" data-ride="carousel">
+                                        <div class="carousel-inner">
+                                          <div class="carousel-item active">
+                                            <img src="img/tommyPB.jpg" class="d-block w-100" alt="Imagen de Tommy">
+                                          </div>
+                                          <div class="carousel-item">
+                                            <img src="img/tommyActor.jpg" class="d-block w-100" alt="Imagen del Actor que interpreta a Tommy">
+                                          </div>
+                                        </div>
+                                        </a>
+                                      </div>
+                                    <div class="card-body">
+                                      <h5 class="card-title">Tommy Shelby</h5>
+                                      <p class="card-text">Tommy tiene ambición y convierte el trapicheo a pequeña escala del mundo de las puestas en todo un imperio. Siempre quiere más, y lo consigue. Tommy Shelby es un Tony Soprano hipster, con rapado vikingo, trajes a medida y música molona de fondo.</p>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="col-md-12 col-xl-6 d-md-block d-none">
+                                <div class="card">
+                                    <div id="carouselExampleControls" class="carousel slide card-img-top" data-ride="carousel">
+                                        <div class="carousel-inner">
+                                          <div class="carousel-item active">
+                                            <img src="img/jonPB.jpg" class="d-block w-100" alt="Imagen de John">
+                                          </div>
+                                          <div class="carousel-item">
+                                            <img src="img/jonActor.jpg" class="d-block w-100" alt="Imagen del Actor que interpreta a John">
+                                          </div>
+                                        </div>
+                                        </a>
+                                      </div>
+                                    <div class="card-body">
+                                      <h5 class="card-title">John Shelby</h5>
+                                      <p class="card-text">John Michael Shelby , también conocido como Johnny o John Boy, fue el tercero de los hermanos Shelby y un miembro de alto rango de los Peaky Blinders. También era accionista de 1/3 en el negocio de la familia Shelby, Shelby Company Limited.</p>
+                                    </div>
+                                  </div>
+                            </div>
+                        </section>
+                        </div>
+                        <div class="col-md-6 order-md-1 order-xl-2 text-white-50">
+                        <section class="row">
+                            <div class="col-md-12 col-xl-6">
+                                <h4>Opiniones</h4>
+                                <p>Excelente reparto y trama. Al sacudirse los clichés se vuelve absorbente. Hay un amplio drama en este momento particularmente tumultuoso en la historia británica, y algunos apreciarán el ritmo sin prisas. Cuenta con unos escenarios tan deliciosos que es como mirar una pintura en movimiento.</p></div>
+                            <article class="col-md-12 col-xl-6">
+                                <form>
+                                <div class="form-group">
+                                  <label for="exampleFormControlTextarea1">Escriba su opinión:</label>
+                                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"  placeholder="Me ha encantado."></textarea>
+                                  <button type="submit" class="btn btn-warning mb-2 my-2">Enviar comentario</button>
+                                </div>
+                              </form></article>
+                        </section>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 bg-secondary text-center" id="vs"><h2 class="d-none d-md-block">No sabias que...</h2></div>
+                    </div>
+                    
+                    <div class="row text-white-50"><div class="col-12"><h4>Sin spoiler</h4></div></div>
+                    <div class="row text-white-50">
+                        <div class="col-md-12 col-xl-6">
+                        <section class="row ">
+                            <figure class="col-md-6 col-xl-6"><img src="img/peakySinSpoiler.jpg" alt="Imagen de Peaky Blinders" class="img-fluid"></figure>
+                            <article class="col-md-6 col-xl-6">
+                                <h4>Quizas no sabias...</h4>
+                                <p>Tommy Shelby es un personaje ficticio, pero sus rivales Billy Kimber y Darby Sabini fueron reales.Billy Kimber era considerado uno de los gángsters más poderosos del Reino Unido, y curiosamente es una de las grandes inspiraciones del actor Cillian Murphy. Por otra parte, Charles “Darby” Sabini era un criminal asentado en Londres y uno de los grandes rivales de Kimber.Los Billy Boys también eran reales..</p> 
+                            </article>
+                        </section>
+                        </div>
+                        <div class="col-md-12 col-xl-6">
+                        <section class="row">
+                            <div class="col-md-6 col-xl-6">
+                                <h4>Quizas no sabias...</h4>
+                                <p>Se fuman alrededor de 3000 cigarrillos en cada temporada.Cillian Murphy no fuma, pero su personaje Tommy —junto con la mayoría de los personajes de la serie— fuma como una chimenea. En su lugar, Murphy usa cigarrillos de hierbas. Estos cigarrillos son totalmente naturales y no contienen tabaco ni nicotina. Los fabricantes de estos cigarrillos informaron que se usan más de 3000 cigarrillos cada temporada.
+                                </p>
+                            </div>
+                            <article class="col-md-6 col-xl-6">
+                                <h4>Quizas no sabias...</h4>
+                                <p>Los actores que representan a John Shelby y Michael Gray son hermanos en la vida real.Finn Cole inició su actuación en la serie antes que su hermano. Él ayudó a su hermano Joe a grabar una audición de vídeo en casa que posteriormente entregó al director. Un par de llamadas telefónicas y reuniones más tarde, Joe ya se había unido con su hermano en la serie.</p>
+                            </article>
+                        </section>
+                        </div>
+                    </div>
+                    <div class="row text-white-50"><div class="col-12"><h4>Con spoiler</h4></div></div>
+                    <div class="row text-white-50">
+                        <div class="col-md-12 col-xl-6">
+                        <section class="row ">
+                            <figure class="col-md-6 col-xl-6"><img src="img/peakySpoiler.jpg" alt="Imagen de Peaky Blinders" class="img-fluid"></figure>
+                            <article class="col-md-6 col-xl-6">
+                                <h4>Quizas no sabias...</h4>
+                                <p>La última escena de la quinta temporada de 'Peaky Blinders' nos deja con una incógnita horrible: el posible suicidio de Tommy Shelby. No es algo que aparezca al final como una sorpresa, ya que toda la temporada se nos han estado dejando pistas de que este podría ser el terrible final del carismático personaje. Por ejemplo, cuando se revela que su madre y su abuelo se suicidaron, y alguien comenta que "es algo que se lleva en la sangre"</p>
+                            </article>
+                        </section>
+                        </div>
+                        <div class="col-md-12 col-xl-6">
+                        <section class="row">
+                            <div class="col-md-6 col-xl-6">
+                                <h4>Quizas no sabias...</h4>
+                                <p>La Unión Británica de Fascistas es una agrupación real nacida en los años 30 como respuesta al movimiento de extrema derecha que recorría toda Europa en manos de personalidades como Benito Mussolini (al que Oswald Mosley cita específicamente como influencia) o, más tarde, Adolf Hitler. 'Peaky Blinders' se hace eco de este partido político de una forma al principio confusa, pero que a medida que se acerca el final comprendemos a la perfección</p>
+                            </div>
+                            <article class="col-md-6 col-xl-6">
+                                <h4>Quizas no sabias...</h4>
+                                <p>Los miembros de la familia que más guerra han dado han sido Michael (Finn Cole), que ha vuelto de su estancia en los Estados Unidos después de perder una buena parte del dinero de la empresa en una mala decisión durante la crisis de la bolsa de 1929. Y lo hace casado con Gina Gray (Ana Taylor-Joy), una joven ambiciosa que ya espera el primer hijo de ambos, y que tiene muy claro en manos de quién debería estar la compañía familiar.</p>
+                            </article>
+                        </section>
+                        </div>
+                    </div>
+                </main>
+                
+
+            </article>
+          </main>
+        </div>
+      <!--Pie de pagina-->
+    <footer class="bg-secondary container-fluid">
+      <div class="row">
+          <p class="col-xl-12 text-white text-center">Escuela Estech 2021</p>
+      </div>
+      <div class="row justify-content-center">
+          <img src="img/facebook.png" alt="Logo Facebook" class="col-2 col-xl-1 img-fluid">
+          <img src="img/twitter.png" alt="Logo Twitter" class="col-2 col-xl-1 img-fluid">
+          <img src="img/youtube.png" alt="Logo Youtube" class="col-2 col-xl-1 img-fluid">
+      </div>
+  </footer>
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+</html>
+<!--Maquetacion 2-->

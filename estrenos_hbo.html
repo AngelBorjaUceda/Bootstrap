@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="icon" href="img/favicon.ico">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
+<title>HBO vs Netflix</title>
+</head>
+<body>
+    <!--Cabecera-->
+    <header class="container-fluid">
+        <div class="row bg-grey">
+            <div class="col-6 align-self-center">
+                <h1 class="text-secondary display-5">Series al dia</h1>
+            </div>
+            <div class="col-6">
+                <div class="row justify-content-center">
+                    <!--Boton visual-->
+                    <div class="col-12 col-md-6"><button class="col-8 col-md-12 btn bg-secondary  text-white py-4 mt-2 mb-2 " data-toggle="modal" data-target="#iniciodeSesion">Entrar</button></div>
+                    <div class="col-12 col-md-6"><a class="col-8 col-md-12 btn btn-secondary   py-4 mt-2 mb-2 " href="formulario.html">Crear Cuenta</a></div>
+                    <!--Parte emergente-->
+                    <div class="modal" id="iniciodeSesion" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                          <div class="modal-content bg-grey">
+                            <div class="modal-header">
+                              <h6 class="modal-title text-secondary">Introduzca sus datos</h6>
+                                    <button type="button" class="close text-white" data-dismiss="modal">X</button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                      <label for="Email" class="text-secondary ">Email del Usuario</label>
+                                      <input type="email" class="form-control" id="Email" placeholder="Introduzca su cuenta">
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="Contraseña" class="text-secondary ">Contraseña</label>
+                                      <input type="password" class="form-control" id="Contraseña">
+                                    </div>
+                                  </form>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Salir</button>
+                              <button type="button" class="btn btn-secondary">Entrar</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+   
+    <!--Menú principal-->
+  <div class="container-fluid bg-light"> 
+    <nav class="navbar navbar-expand-md navbar-light ">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuPrincipal">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="row collapse navbar-collapse" id="menuPrincipal">
+            <ul class="col-12 navbar-nav justify-content-around ml-2 ml-md-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">HBO</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="juegodetronos_hbo.html">Juego de tronos</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="chernobyl_hbo.html">Chernobyl</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="friends_hbo.html">Friends</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="estrenos_hbo.html">Estrenos/Novedades</a>
+                </div>
+              </li>
+              <li class="nav-item  active">
+                  <a class="nav-link " href="index.html">HBO vs Netflix</a>
+              </li>
+              <li class="nav-item dropdown ">
+                  <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Netflix</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="peakyblinders_netflix.html">Peaky Blinders</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="breakingbad_netflix.html">Breaking Bad</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="strangerthings_netflix.html">Stranger Things</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="estrenos_netflix.html">Estrenos/Novedades</a>
+                  </div>
+                </li>
+            </ul>
+          </div>
+      </nav>
+  </div> 
+
+    <!--Menú lateral + contenido principal de la página-->
+    <div class="container-fluid">
+        <main class="row">
+          <!--Menu lateral-->
+            <nav class="navbar col-md-3 col-xl-2 bg-grey navbar-dark align-items-start 	d-none d-md-block">
+                
+            </nav>
+         
+          <!--Contenido principal-->
+          <article class="col-md-9 col-xl-10 px-0 my-xl-4">
+              <section class="container-fluid container-xl ">
+                    <div class="row bg-secondary text-center"> 
+                        <div class="col-12"><h1>Estrenos HBO</h1></div>
+                    </div>
+                
+                    <div class="row">
+                        <div class="embed-responsive embed-responsive-16by9 d-none d-none d-md-block">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/uVZzZJoeOr4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        <div class="col-12 d-md-none"><img src="img/cabeceraEstrenosHbo.jpg" alt="Logo Hbo" class="w-100"></div>
+                    </div>
+                
+                    <div class="row text-white-50">
+                        <div class="col-12 col-xl-6">
+                            <h3>MAYANS M.C (temporada 3)</h3>
+                            <div class="row">
+                                <div class="col-md-6 col-xl-12 d-none d-md-block embed-responsive embed-responsive-16by9">
+                                    
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/F-hw3fzy1QE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div class="col-4 d-md-none">
+                                    <img src="img/mayaEstrenoHBO.jpg" alt="Serie MAYANS M.C" class="img-fluid">
+                                </div>
+                                <div class="col-8 col-md-6 col-xl-12">
+                                    Mayans M.C. es el nuevo capítulo de la saga de Hijos de la anarquía. La serie está ambientada en un mundo pos Jax Teller, donde Ezekiel "EZ" Reyes acaba de salir de la cárcel y entra en el club de los Mayans como novato, en la frontera entre México y California. Ahora EZ debe forjar su nueva identidad en una ciudad en la que el sueño americano pudo ser suyo.Prevista para 17 marzo 2021.
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-xl-6">
+                            <h3>Genera+ion (temporada 1)</h3>
+                            <div class="row">
+                                <div class="col-md-6 col-xl-12 d-none d-md-block order-md-2 order-xl-1">
+                                    <div class="col-md-12 col-xl-12 d-none d-md-block embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/LaW_mdEqwpg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                                <div class="col-4 d-md-none"><img src="img/genratiopnEstrenohbo.jpg" alt="Serie Genera+ion" class="img-fluid">
+                                </div>
+                                <div class="col-8 col-md-6 col-xl-12 order-md-1 order-xl-2">
+                                    Genera+ion es  una oscura pero divertida serie de media hora que sigue a un grupo diverso de estudiantes de secundaria cuya exploración de la sexualidad moderna (con dispositivos y todo) pone a prueba algunas creencias profundamente arraigadas sobre la vida, el amor y la naturaleza de la familia en una comunidad conservadora. Prevista para 11 marzo 2021
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-xl-6">
+                            <h3>Bienvenidos a utmark (temporada 1)</h3>
+                            <div class="row">
+                                <div class="col-md-6 col-xl-12 d-none d-md-block embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/-GFpfJ-dtew" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div class="col-4 d-md-none">
+                                    <img src="img/welcomeEstrenohbo.jpg" alt="Serie Bienvenidos a utmark" class="img-fluid">
+                                </div>
+                                <div class="col-8 col-md-6 col-xl-12">
+                                    Todo el mundo conoce a todo el mundo en este rincón apartado al norte del norte. Pero los elementos en Utmark son extraños y salvajes, y a los extranjeros no siempre les va bien. Cuando una nueva y optimista maestra se muda al pueblo, llega con la esperanza de empezar de nuevo, pero pronto se dará cuenta de que la única persona que se comporta de forma remotamente madura en este pueblo es una niña de 12 años. Prevista para el 18 de abril.
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-xl-6">
+                            <h3>MARE OF EASTTOWN  (temporada 1)</h3>
+                            <div class="row">
+                                <div class="col-md-6 col-xl-12 d-none d-md-block order-md-2 order-xl-1">
+                                    <div class="col-md-12 col-xl-6 d-none d-md-block embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/pwaLLEZO6FM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                            </div>
+                            <div class="col-4 d-md-none"><img src="img/mareestrenosgbo.jpg" alt="Serie Mare of EASTTOWN" class="img-fluid">
+                            </div>
+                            <div class="col-8 col-md-6 col-xl-12 order-md-1 order-xl-2">Esta serie limitada está protagonizada por Winslet en el papel de Mare Sheehan, una detective de un pequeño pueblo de Pensilvania que investiga un asesinato local mientras la vida se desmorona a su alrededor. Esta serie es una exploración del lado oscuro de una comunidad unida y una revisión de cómo la familia y las tragedias del pasado pueden definir nuestro presente.Prevista para 19 de abril.</div>
+                        </div>
+                        </div>
+                        <div class="col-12">
+
+                        
+                        <div class="row justify-content-around">
+                          <div class="col3"><a class="btn btn-success" data-toggle="collapse" href="#collapse">
+                              Curiosidad 1
+                            </a></div>
+                            <div class="col3"><a class="btn btn-success" data-toggle="collapse" href="#collapse2">
+                              Curiosidad 2</a></div>
+                              
+                              <div class="col3"><a class="btn btn-success" data-toggle="collapse" href="#collapse3">
+                                  Curiosidad 3
+                                  </a></div>
+                      </div>
+                    </div>
+                          <div class="collapse text-dark" id="collapse">
+                            <div class="card card-body">
+                                HBO no sólo fue el primer canal en ser transmitido vía satélite desde su lanzamiento en Latinoamérica, sino el primero en tener canales multiplex, incorporar tecnología digital de alta definición, grabar en 4K, lanzar una plataforma digital y un servicio “a la carta”.
+                            </div>
+                          </div>
+                          <div class="collapse text-dark" id="collapse2">
+                            <div class="card card-body">
+                                La generación millennial ya no quieren estar sujetos a un televisor. Ellos son libres y quieren disfrutar donde sea, por eso lanzaron su plataforma HBO GO. Ya no necesitas tener televisión por cable, vaya, ni siquiera un televisor.
+                            </div>
+                          </div>
+                          <div class="collapse text-dark" id="collapse3">
+                            <div class="card card-body">
+                                El Peabody Award premia la excelencia en radio, televisión y online con base en su calidad, no su popularidad. HBO lo ganó por el documental She’s Nobody’s Baby, de 1981, sobre la evolución del rol femenino durante el siglo XX.
+                            </div>
+                          </div>                 
+            </section>
+            </article>
+          </main>
+        </div>
+      <!--Pie de pagina-->
+    <footer class="bg-secondary container-fluid">
+      <div class="row">
+          <p class="col-xl-12 text-white text-center">Escuela Estech 2021</p>
+      </div>
+      <div class="row justify-content-center">
+          <img src="img/facebook.png" alt="Logo Facebook" class="col-2 col-xl-1 img-fluid">
+          <img src="img/twitter.png" alt="Logo Twitter" class="col-2 col-xl-1 img-fluid">
+          <img src="img/youtube.png" alt="Logo Youtube" class="col-2 col-xl-1 img-fluid">
+      </div>
+  </footer>
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+</html>
+<!--Maquetacion 3-->

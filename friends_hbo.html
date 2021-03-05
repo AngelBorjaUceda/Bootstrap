@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="icon" href="img/favicon.ico">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
+<title>HBO vs Netflix</title>
+</head>
+<body>
+    <!--Cabecera-->
+    <header class="container-fluid">
+        <div class="row bg-grey">
+            <div class="col-6 align-self-center">
+                <h1 class="text-secondary display-5">Series al dia</h1>
+            </div>
+            <div class="col-6">
+                <div class="row justify-content-center">
+                    <!--Boton visual-->
+                    <div class="col-12 col-md-6"><button class="col-8 col-md-12 btn bg-secondary  text-white py-4 mt-2 mb-2 " data-toggle="modal" data-target="#iniciodeSesion">Entrar</button></div>
+                    <div class="col-12 col-md-6"><a class="col-8 col-md-12 btn btn-secondary   py-4 mt-2 mb-2 " href="formulario.html">Crear Cuenta</a></div>
+                    <!--Parte emergente-->
+                    <div class="modal" id="iniciodeSesion" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                          <div class="modal-content bg-grey">
+                            <div class="modal-header">
+                              <h6 class="modal-title text-secondary">Introduzca sus datos</h6>
+                                    <button type="button" class="close text-white" data-dismiss="modal">X</button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                      <label for="Email" class="text-secondary ">Email del Usuario</label>
+                                      <input type="email" class="form-control" id="Email" placeholder="Introduzca su cuenta">
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="Contraseña" class="text-secondary ">Contraseña</label>
+                                      <input type="password" class="form-control" id="Contraseña">
+                                    </div>
+                                  </form>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Salir</button>
+                              <button type="button" class="btn btn-secondary">Entrar</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </header>
+   
+    <!--Menú principal-->
+  <div class="container-fluid bg-light"> 
+    <nav class="navbar navbar-expand-md navbar-light ">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuPrincipal">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="row collapse navbar-collapse" id="menuPrincipal">
+            <ul class="col-12 navbar-nav justify-content-around ml-2 ml-md-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">HBO</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="juegodetronos_hbo.html">Juego de tronos</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="chernobyl_hbo.html">Chernobyl</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="friends_hbo.html">Friends</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="estrenos_hbo.html">Estrenos/Novedades</a>
+                </div>
+              </li>
+              <li class="nav-item  active">
+                  <a class="nav-link " href="index.html">HBO vs Netflix</a>
+              </li>
+              <li class="nav-item dropdown ">
+                  <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Netflix</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="peakyblinders_netflix.html">Peaky Blinders</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="breakingbad_netflix.html">Breaking Bad</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="strangerthings_netflix.html">Stranger Things</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="estrenos_netflix.html">Estrenos/Novedades</a>
+                  </div>
+                </li>
+            </ul>
+          </div>
+      </nav>
+  </div> 
+
+    <!--Menú lateral + contenido principal de la página-->
+    <div class="container-fluid">
+        <main class="row">
+          <!--Menu lateral-->
+            <nav class="navbar col-md-3 col-xl-2 bg-grey navbar-dark align-items-start 	d-none d-md-block">
+                <ul class="navbar-nav flex-column sticky-top">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#trailer">Trailer</a>
+                    </li>   
+                    <li class="nav-item">
+                      <a class="nav-link" href="#netflix">Historia Netflix</a>
+                    </li> 
+                    <li class="nav-item">
+                      <a class="nav-link" href="#vs">HBO vs Netflix</a>
+                    </li> 
+                </ul>
+            </nav>
+         
+          <!--Contenido principal-->
+          <article class="col-md-9 col-xl-10 px-0 my-xl-4">
+                
+                <main class="container-fluid container-xl">
+                    <div class="row">
+                        <div class="col-12 bg-secondary text-center " id="trailer"><h2>Friends</h2></div>
+                    </div>
+                    <div class="row my-3">
+                        <div class="col-md-6 order-md-2 order-xl-1 ">
+                                <div class="embed-responsive embed-responsive-16by9 d-none d-none d-md-block">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_0f4BG7vrLA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                            <div class="d-md-none">
+                                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                    <div class="carousel-inner">
+                                      <div class="carousel-item active">
+                                        <img src="img/carouselFUno.jpg" class="d-block w-100" alt="Imagen de Friends">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img src="img/carouselFDos.jpg" class="d-block w-100" alt="Imagen de Friends">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img src="img/carouselFTres.jpg" class="d-block w-100" alt="Imagen de Friends">
+                                      </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                      <span class="carousel-control-prev-icon"></span>
+                                      <span class="sr-only">Anterior</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                      <span class="carousel-control-next-icon"></span>
+                                      <span class="sr-only">Siguiente</span>
+                                    </a>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 order-md-1 order-xl-2 text-white-50">
+                            <h4>¿De que trata?</h4>
+                            <p>La historia da inicio en un café de Nueva York, Central Perk, en el cual se encuentran los personajes: Monica Geller, Chandler Bing, Phoebe Buffay y Joey Tribbiani; donde también se incorporan con el paso de los minutos Ross Geller y por último Rachel Green. Este encuentro da comienzo a una etapa donde seis amigos viven en la ciudad de Nueva York. Es una comedia basada en la amistad, los buenos y malos momentos como: los triunfos, el amor, el pasado y el futuro.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 bg-secondary text-center"><h2 class="d-none d-md-block">Personajes y Criticas</h2><h2 class="d-md-none">Criticas</h2></div>
+                    </div>
+                    <div class="row my-3">
+                        <div class="col-md-6 order-md-2 order-xl-1">
+                        <section class="row">
+                            <div class="col-md-12 col-xl-6 d-md-block d-none">
+                                <div class="card">
+                                    <div id="carouselExampleControls" class="carousel slide card-img-top" data-ride="carousel">
+                                        <div class="carousel-inner">
+                                          <div class="carousel-item active">
+                                            <img src="img/rachelFr.jpg" class="d-block w-100" alt="Imagen de Rachel">
+                                          </div>
+                                          <div class="carousel-item">
+                                            <img src="img/rachelActriz.jpg" class="d-block w-100" alt="Imagen del Actriz que interpreta a Rachel">
+                                          </div>
+                                        </div>
+                                        </a>
+                                      </div>
+                                    <div class="card-body">
+                                      <h5 class="card-title">Rachel</h5>
+                                      <p class="card-text">Hija del Dr. Leonard Green, un severo e intimidante cirujano cardiólogo y de Sandra Green, una cómica e inepta madre, Rachel es la segunda de tres hijas. Su hermana mayor es Amy (interpretada por Christina Applegate), y su hermana menor es Jill (interpretada por Reese Whiterspoon).</p>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="col-md-12 col-xl-6 d-md-block d-none">
+                                <div class="card">
+                                    <div id="carouselExampleControls" class="carousel slide card-img-top" data-ride="carousel">
+                                        <div class="carousel-inner">
+                                          <div class="carousel-item active">
+                                            <img src="img/monicaFr.jpg" class="d-block w-100" alt="Imagen de Monica">
+                                          </div>
+                                          <div class="carousel-item">
+                                            <img src="img/monicaActriz.jpg" class="d-block w-100" alt="Imagen del Actor que interpreta a Monica">
+                                          </div>
+                                        </div>
+                                        </a>
+                                      </div>
+                                    <div class="card-body">
+                                      <h5 class="card-title">Monica</h5>
+                                      <p class="card-text">A pesar de su carácter extremadamente competitivo y su obsesión con la limpieza, es un personaje carismático y espontáneo, la más centrada del grupo y esta dispuesta en ayudar a sus amigos y no deja de ser una persona alegre y de buen corazón</p>
+                                    </div>
+                                  </div>
+                            </div>
+                        </section>
+                        </div>
+                        <div class="col-md-6 order-md-1 order-xl-2 text-white-50">
+                        <section class="row">
+                            <div class="col-md-12 col-xl-6">
+                                <h4>Opiniones</h4>
+                                <p>24 años después, Friends sigue siendo un tema de conversación. Los millennials han llegado a acusarla de machista y homófoba pero, quién ha crecido con ella, ha podido ver a mujeres independientes y reconocidas en sus trabajos y a varios personajes homosexuales que no cumplen los típicos estereotipos. </p></div>
+                            <article class="col-md-12 col-xl-6">
+                                <form>
+                                <div class="form-group">
+                                  <label for="exampleFormControlTextarea1">Escriba su opinión:</label>
+                                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"  placeholder="Me ha encantado."></textarea>
+                                  <button type="submit" class="btn btn-warning mb-2 my-2">Enviar comentario</button>
+                                </div>
+                              </form></article>
+                        </section>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 bg-secondary text-center"><h2 class="d-none d-md-block">No sabias que...</h2></div>
+                    </div>
+                    
+                    <div class="row"><div class="col-12 text-white-50"><h4>Sin spoiler</h4></div></div>
+                    <div class="row text-white-50">
+                        <div class="col-md-12 col-xl-6">
+                        <section class="row ">
+                            <figure class="col-md-6 col-xl-6"><img src="img/FSinSpoiler.jpg" alt="Imagen de Friends" class="img-fluid"></figure>
+                            <article class="col-md-6 col-xl-6">
+                                <h4>Quizas no sabias...</h4>
+                                <p>Además de que Matt LeBlanc, Matthew Perry y David Schwimmer fueron nominados, Lisa Kudrow ganó la Mejor actriz de reparto en 1998, y Jennifer Aniston fue la Mejor actriz principal en 2002. Por razones que aún no están realmente claras, Cox nunca recibió ni una sola nominación a pesar de ser uno de los personajes con más matices y más creíbles del programa. Incluso Bruce Willis ganó un Emmy por su participación como invitado en el programa y, sin embargo, nunca hubo espacio para reconocer el trabajo Courtney.
+
+                                </p> 
+                            </article>
+                        </section>
+                        </div>
+                        <div class="col-md-12 col-xl-6 text-white-50">
+                        <section class="row">
+                            <div class="col-md-6 col-xl-6">
+                                <h4>Quizas no sabias...</h4>
+                                <p>Bruce Willis participó tras perder una apuesta, el actor apareció en la serie únicamente porque perdió una apuesta con Matthew Perry. Los dos intérpretes rodaron juntos la película Falsas apariencias y apostaron a que, si no era número uno en taquilla durante su primer fin de semana, Bruce Willis actuaría en la serie. Además donó lo que ganó por su intervención a la beneficencia.
+                                </p>
+                            </div>
+                            <article class="col-md-6 col-xl-6">
+                                <h4>Quizas no sabias...</h4>
+                                <p>El último episodio no fue el más visto
+                                    Al menos no en su emisión en Estados Unidos. Tuvo una audiencia de 52,5 millones de espectadores. Sin embargo el episodio El de después de la superbowl, de la segunda temporada (1996), congregó a 5,9 millones de personas delante de la televisión.
+                                    
+                                </p>
+                            </article>
+                        </section>
+                        </div>
+                    </div>
+                    <div class="row"><div class="col-12"><h4>Con spoiler</h4></div></div>
+                    <div class="row">
+                        <div class="col-md-12 col-xl-6">
+                        <section class="row text-white-50">
+                            <figure class="col-md-6 col-xl-6"><img src="img/FSpoiler.jpg" alt="Imagen de Friends" class="img-fluid"></figure>
+                            <article class="col-md-6 col-xl-6">
+                                <h4>Quizas no sabias...</h4>
+                                <p>En un principio, los guionistas empezaron a escribir la serie teniendo en mente que los personajes de Monica y Chandler iban a tener una relación romántica. En el libro I’ll Be There for You, que se publica este octubre con motivo del aniversario, Kelsey Miller revela a los fans de la serie que fue el propio Matt LeBlanc quien sugirió que su personaje no fuera detrás de su vecina y fueran solo amigos.
+                                </p>
+                            </article>
+                        </section>
+                        </div>
+                        <div class="col-md-12 col-xl-6">
+                        <section class="row text-white-50">
+                            <div class="col-md-6 col-xl-6">
+                                <h4>Quizas no sabias...</h4>
+                                <p>El papel no fue demasiado difícil para James Michael Tyler. El actor trabajó en Bourgeois Pig (una cafetería de Hollywood) hasta el final de la cuarta temporada. Tyler fue elegido no tanto por sus habilidades para la actuación, sino porque era el único extra que sabía cómo usar una máquina de café en el set de Central Perk.
+                                </p>
+                            </div>
+                            <article class="col-md-6 col-xl-6">
+                                <h4>Quizas no sabias...</h4>
+                                <p>Un pequeño descuido durante la filmación casi termina transformándose en una situación ilógica que los creadores iban a tener que explicar durante años. Como la idea era que ellos vivieran en un piso superior, debieron cambiar los números de los departamentos luego de un par de episodios: el apartamento de Mónica cambió del número 5 al 20 y, para que no desentone, el número del de Chandler y Joey también se modificó de 4 a 19.
+                                </p>
+                            </article>
+                        </section>
+                        </div>
+                    </div>
+                </main>
+                
+
+            </article>
+          </main>
+        </div>
+      <!--Pie de pagina-->
+    <footer class="bg-secondary container-fluid">
+      <div class="row">
+          <p class="col-xl-12 text-white text-center">Escuela Estech 2021</p>
+      </div>
+      <div class="row justify-content-center">
+          <img src="img/facebook.png" alt="Logo Facebook" class="col-2 col-xl-1 img-fluid">
+          <img src="img/twitter.png" alt="Logo Twitter" class="col-2 col-xl-1 img-fluid">
+          <img src="img/youtube.png" alt="Logo Youtube" class="col-2 col-xl-1 img-fluid">
+      </div>
+  </footer>
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+</html>
+<!--Maquetacion 2-->
